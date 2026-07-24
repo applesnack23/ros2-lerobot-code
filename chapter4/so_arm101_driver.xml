@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<library path="so_arm101_hardware">
+
+  <class
+    name="so_arm101_driver/SOArm101Hardware"
+    type="so_arm101_driver::SOArm101Hardware"
+    base_class_type="hardware_interface::SystemInterface">
+
+    <description>
+      SO-ARM101 hardware interface for ros2_control
+    </description>
+
+  </class>
+
+</library>
