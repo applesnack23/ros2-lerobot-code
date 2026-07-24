@@ -1,16 +1,39 @@
 <?xml version="1.0"?>
 
-<library path="so_arm101_hardware">
+<?xml-model
+  href="http://download.ros.org/schema/package_format3.xsd"
+  schematypens="http://www.w3.org/2001/XMLSchema"?>
 
-  <class
-    name="so_arm101_driver/SOArm101Hardware"
-    type="so_arm101_driver::SOArm101Hardware"
-    base_class_type="hardware_interface::SystemInterface">
+<package format="3">
 
-    <description>
-      SO-ARM101 hardware interface for ros2_control
-    </description>
+  <name>so_arm101_driver</name>
+  <version>0.0.0</version>
 
-  </class>
+  <description>
+    ros2_control hardware interface for SO-ARM101
+  </description>
 
-</library>
+  <maintainer email="twiniex@todo.todo">
+    twiniex
+  </maintainer>
+
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>
+    ament_cmake
+  </buildtool_depend>
+
+  <depend>hardware_interface</depend>
+  <depend>pluginlib</depend>
+  <depend>rclcpp</depend>
+  <depend>rclcpp_lifecycle</depend>
+  <depend>std_msgs</depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_xmllint</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+
+</package>
